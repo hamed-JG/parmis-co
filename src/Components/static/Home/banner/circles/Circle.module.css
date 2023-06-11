@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+}
+.circle1,
+.circle2,
+.circle3 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background: #e6e7ee;
+  box-shadow: 5px 5px 10px #c4c4ca, -5px -5px 10px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.circle1 img,
+.circle2 img,
+.circle3 img {
+  width: 75%;
+  height: 75%;
+}
+.circle1 {
+  top: -40px;
+  right: 20px;
+}
+.circle2 {
+  top: 100px;
+  right: -20px;
+}
+.circle3 {
+  bottom: -40px;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 0;
+  }
+  .circle1,
+  .circle2,
+  .circle3 {
+    position: initial;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+  }
+}
