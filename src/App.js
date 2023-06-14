@@ -12,7 +12,7 @@ import Gallery from "./pages/Gallery";
 
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
-// import CallToAction from './Components/Shared/Call to action/CallToAction'
+import FollowBar from './Components/Shared/actionBar/FollowBar'
 
 
 import ScrollToTop from "./Components/Shared/Tools/ScrollToTop";
@@ -45,7 +45,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
 
-        {/* <CallToAction/> */}
+        <FollowBar/>
 
         <Footer />
 

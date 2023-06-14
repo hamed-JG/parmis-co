@@ -1,5 +1,5 @@
 import React from "react";
-import { ThreeDots } from "react-loader-spinner";
+import { Rings } from "react-loader-spinner";
 function LoadingSpinner() {
   return (
     <div
@@ -11,15 +11,15 @@ function LoadingSpinner() {
         paddingTop: "200px",
       }}
     >
-      <ThreeDots
+      <Rings
         height="80"
         width="80"
-        radius="9"
-        color="#000000"
-        ariaLabel="three-dots-loading"
+        color="#808080"
+        radius="6"
         wrapperStyle={{}}
-        wrapperClassName=""
+        wrapperClass=""
         visible={true}
+        ariaLabel="rings-loading"
       />
     </div>
   );

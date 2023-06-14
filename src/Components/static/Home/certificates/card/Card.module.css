@@ -1,0 +1,77 @@
+.card {
+  text-align: center;
+  background: linear-gradient(145deg, #f6f7ff, #cfd0d6);
+  box-shadow: 5px 5px 10px #c4c4ca, -5px -5px 10px #ffffff;
+  width: 200px;
+  height: 200px;
+  padding: 25px;
+  margin:15px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card h4 {
+  color: var(--primaryText);
+  border-bottom: 1px solid var(--primaryText);
+}
+.card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon {
+  margin: 0 5px;
+  color: gray;
+}
+.hide {
+  display: none;
+}
+.show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: show 1s ease 0s 1 normal forwards;
+}
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.certificateImg {
+  max-width: 900px;
+  min-width: 350px;
+  max-height: 500px;
+  min-height: 200px;
+  background-color: white;
+}
+.close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+@media (max-width:768px){
+    .card{
+        width: 150px;
+        height: 150px;
+        margin:0 9px;
+    }
+  }

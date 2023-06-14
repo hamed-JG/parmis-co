@@ -1,0 +1,97 @@
+.main {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 30px;
+  color: var(--primaryText);
+}
+.badge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+.badge div {
+  color: var(--primaryText);
+  background: linear-gradient(145deg, #cfd0d6, #f6f7ff);
+  box-shadow: 6px 6px 12px #c4c4ca, -6px -6px 12px #ffffff;
+  font-size: 18px;
+  width: 250px;
+  padding: 10px 20px;
+  margin: 50px 0;
+  border-radius: 16px;
+  text-align: center;
+  cursor: default;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+}
+.container img {
+  width: 450px;
+  height: 350px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #cfd0d6, #f6f7ff);
+  box-shadow: 6px 6px 12px #c4c4ca, -6px -6px 12px #ffffff;
+}
+.content {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+.content h2,
+.content h3 {
+  text-align: center;
+}
+.content h3 {
+  color: var(--primaryText);
+}
+.content p {
+  text-align: justify;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.btnContainer button {
+  width: 150px;
+  font-family: "yekan";
+  font-size: 17px;
+  margin: 20px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 1s;
+  border-radius: 16px;
+  background: #e6e7ee;
+  box-shadow: 5px 5px 7px #c4c4ca, -5px -5px 7px #ffffff;
+}
+.btnContainer button:active {
+  background: #e6e7ee;
+  box-shadow: inset 6px 6px 12px #c4c4ca, inset -6px -6px 12px #ffffff;
+}
+@media (max-width: 768px) {
+  .badge div {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 25px 0;
+    border-radius: 16px;
+    text-align: center;
+    cursor: default;
+  }
+  .content {
+    margin: 25px 0;
+  }
+  .content p {
+    padding: 0 25px;
+  }
+}

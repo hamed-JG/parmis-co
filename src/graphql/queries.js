@@ -1,7 +1,27 @@
 import { gql } from "@apollo/client";
 const GET_BLOGS_INFO = gql`
   query {
-    posts (first: 13){
+    posts(first: 100) {
+      author {
+        name
+        field
+        avatar {
+          url
+        }
+      }
+      slug
+      title
+      id
+      datePublished
+      coverPhoto {
+        url
+      }
+    }
+  }
+`;
+const GET_BLOGS_INFO_HOME = gql`
+  query {
+    posts(first: 3) {
       author {
         name
         field
@@ -61,4 +81,10 @@ const GET_GALLERY_PHOTO = gql`
     }
   }
 `;
-export { GET_BLOGS_INFO, GET_POST_INFO, GET_POST_COMMENTS, GET_GALLERY_PHOTO };
+export {
+  GET_BLOGS_INFO,
+  GET_BLOGS_INFO_HOME,
+  GET_POST_INFO,
+  GET_POST_COMMENTS,
+  GET_GALLERY_PHOTO,
+};

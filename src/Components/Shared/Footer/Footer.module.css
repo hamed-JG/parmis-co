@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 .container {
   width: 100%;
@@ -36,8 +36,8 @@
   align-items: center;
 }
 .footer {
-  padding: 30px;
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 20px;
   color: #000;
   text-align: center;
 }

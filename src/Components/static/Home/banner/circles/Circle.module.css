@@ -13,7 +13,7 @@
   width: 130px;
   height: 130px;
   border-radius: 100%;
-  background: #e6e7ee;
+  background: linear-gradient(145deg, #f6f7ff, #cfd0d6);
   box-shadow: 5px 5px 10px #c4c4ca, -5px -5px 10px #ffffff;
   display: flex;
   justify-content: center;
@@ -27,16 +27,16 @@
   height: 75%;
 }
 .circle1 {
-  top: -40px;
-  right: 20px;
+  top: -220px;
+  right: 10px;
 }
 .circle2 {
-  top: 100px;
-  right: -20px;
+  top: -70px;
+  right: -30px;
 }
 .circle3 {
-  bottom: -40px;
-  right: 20px;
+  bottom: -220px;
+  right: 10px;
 }
 @media (max-width: 768px) {
   .main {
