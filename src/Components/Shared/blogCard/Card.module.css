@@ -28,7 +28,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* border-bottom: 1px solid rgba(138, 137, 137, 0.39); */
 }
 .date {
   font-size: 13px;

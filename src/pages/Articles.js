@@ -1,9 +1,6 @@
-import React from 'react'
-import styles from './styles/pages.module.css'
+import React from "react";
 function Articles() {
-  return (
-    <div className={styles.main}>Articles</div>
-  )
+  return <div>Articles</div>;
 }
 
-export default Articles
+export default Articles;
